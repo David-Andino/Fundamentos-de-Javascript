@@ -64,6 +64,6 @@ for (let i = 0; i < 10; i++) {
         continue // Salta la ejecucion del bucle para esa iteracion
     } else if (i === 8) {
         break // Termina la ejecucion del bucle
-    }
+    }``
     console.log(i)
 }
