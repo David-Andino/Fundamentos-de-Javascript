@@ -79,3 +79,4 @@ console.log(array3);
 // Spreading de un objeto
 const persona2 = { ...persona, profesion: "Ingeniero" };
 console.log(persona2);
+
