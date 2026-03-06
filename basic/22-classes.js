@@ -106,3 +106,41 @@ console.log(`Nombre completo: ${persona6.getNombreCompleto()}`);
 persona6.nombre = "Luis Miguel";
 persona6.apellido = "Garcia Lopez";
 console.log(`Nombre completo actualizado: ${persona6.getNombreCompleto()}`);
+
+
+// Herencia
+
+class Animal {
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+    sound()  {
+        console.log(`${this.nombre} hace un sonido.`);
+    }
+}
+
+class Perro extends Animal {
+    constructor(nombre, raza) {
+        super(nombre);
+        this.raza = raza;
+    }
+    sound() {
+        console.log(`${this.nombre} ladra.`);
+    }
+}
+
+let perro1 = new Perro("Rex", "Labrador");
+perro1.sound(); // Rex ladra.
+
+
+class fish extends Animal {
+    constructor(nombre, size) {
+        super(nombre);
+        this.size = size;
+    }
+    sound() {
+        console.log(`${this.nombre} hace un sonido.`);
+    }
+}
+let myFish = new fish("Nemo", " pequeño");
+myFish.sound(); // Nemo hace un sonido.
