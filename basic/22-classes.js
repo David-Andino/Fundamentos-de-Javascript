@@ -144,3 +144,15 @@ class fish extends Animal {
 }
 let myFish = new fish("Nemo", " pequeño");
 myFish.sound(); // Nemo hace un sonido.
+
+// Metodo estático
+class MathUtil {
+    static sum(a, b) {
+        return a + b;
+    }
+    static multiply(a, b) {
+        return a * b;
+    }
+}
+console.log(`Suma: ${MathUtil.sum(5, 3)}`); // Suma: 8
+console.log(`Multiplicación: ${MathUtil.multiply(5, 3)}`); // Multiplicación: 15
