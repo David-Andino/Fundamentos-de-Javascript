@@ -41,5 +41,19 @@ sum(2, '3') // Esto lanzará un error
 
 //throw new Error('Esto es un error personalizado')
 
+// TypeError
+try {
+    null.f()
+}catch (error) {
+    console.log(error instanceof TypeError) // true
+    console.log(error.message) // Cannot read property 'f' of null
+}
 
+// ReferenceError
+try {
+    console.log(x) 
+}catch (error) {
+    console.log(error instanceof ReferenceError) // true
+    console.log(error.message) // x is not defined
+}
 
