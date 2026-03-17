@@ -38,4 +38,14 @@ const handler = {
 }
 
 handler.greeting();
-handles.arrowGreeting(); // undefined, porque el this en arrow functions no se refiere al objeto handler, sino al contexto global.
+//handles.arrowGreeting(); // undefined, porque el this en arrow functions no se refiere al objeto handler, sino al contexto global.
+
+// IIFE (Expresion de funcion Invocada inmediatamente)
+
+(function() {
+    console.log("IIFE Clasico")
+})();
+
+((() => {
+    console.log("IIFE con Arrow Function")
+})());
