@@ -50,7 +50,7 @@ handler.greeting();
     console.log("IIFE con Arrow Function")
 })());
 
-// Parametros Rest
+// Parametros Rest (...)
 
 function sum(...numbers) {
     let result = 0
@@ -62,3 +62,13 @@ function sum(...numbers) {
 
 console.log(sum(1, 2, 3, 4, 5))
 console.log(sum(12, 4))
+
+// Spread Operator (...)
+
+const arr1 = [1, 2, 3];
+function sumWithSpread(a, b, c) {
+    return a + b + c;
+}
+
+console.log(sumWithSpread(1, 2, 3)); // Sin Spread
+console.log(sumWithSpread(...arr1)); // Descomponemos el array en sus elementos individuales
