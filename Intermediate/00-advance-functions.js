@@ -72,3 +72,19 @@ function sumWithSpread(a, b, c) {
 
 console.log(sumWithSpread(1, 2, 3)); // Sin Spread
 console.log(sumWithSpread(...arr1)); // Descomponemos el array en sus elementos individuales
+
+// Closures (Clausuras)
+
+function createCounter() {
+    let count = 0;
+    return function() {
+        count++;
+        console.log(`Contador: ${count}`);
+    }
+    executeCounter();
+}
+
+const counter = createCounter()
+counter()
+counter()
+counter()
