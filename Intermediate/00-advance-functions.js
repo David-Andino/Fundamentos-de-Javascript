@@ -49,3 +49,16 @@ handler.greeting();
 ((() => {
     console.log("IIFE con Arrow Function")
 })());
+
+// Parametros Rest
+
+function sum(...numbers) {
+    let result = 0
+    for (let number of numbers){
+        result += number
+    }
+    return result
+}
+
+console.log(sum(1, 2, 3, 4, 5))
+console.log(sum(12, 4))
