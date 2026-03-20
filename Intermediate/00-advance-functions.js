@@ -102,3 +102,13 @@ function factorial(n) {
 
 console.log(`factorial(5) = ${factorial(5)}`); // 120
 // factorial(5) => 5 * factorial(4) => 5 * 4 * factorial(3) => 5 * 4 * 3 * factorial(2) => 5 * 4 * 3 * 2 * factorial(1) => 5 * 4 * 3 * 2 * 1 => 120
+
+// Funciones Parciales
+function partialSum(a) {
+    return function(b, c) {
+        return sum(a, b, c);
+    }}
+
+const add5 = partialSum(5);
+console.log(add5(3, 2));
+console.log(add5(10, 20));
