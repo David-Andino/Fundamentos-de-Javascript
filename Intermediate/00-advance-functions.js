@@ -112,3 +112,14 @@ function partialSum(a) {
 const add5 = partialSum(5);
 console.log(add5(3, 2));
 console.log(add5(10, 20));
+
+// Currying (Currificación)
+function currySum(a) {
+    return function(b) {
+        return function(c) {
+            return sum(a, b, c);
+        }
+    }}
+
+currySum(5)(3)(2); // 10
+console.log(currySum(5)(3)(2));
