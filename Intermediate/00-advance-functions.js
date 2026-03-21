@@ -123,3 +123,17 @@ function currySum(a) {
 
 currySum(5)(3)(2); // 10
 console.log(currySum(5)(3)(2));
+
+// Calback Functions (Funciones de Retorno)
+
+function processData(data, callback) {
+    const result = sum(...data);
+    callback(result);
+}
+
+function processResult(result) {
+    console.log(`El resultado es: ${result}`);
+}
+
+processData([1, 2, 3], processResult)
+
