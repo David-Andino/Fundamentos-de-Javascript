@@ -50,3 +50,15 @@ counter.increment();
 console.log(counter.getValue());
 counter.decrement();
 console.log(counter.getValue());
+
+
+// 5. crear una funcion sumManyTimes(multiplier, ...numbers) que primero sume todos los numeros y luego multiplique el resultado por el multiplicador
+function sumManyTimes(multiplier, ...numbers) {
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+    }
+    return sum * multiplier;
+}
+console.log(sumManyTimes(2, 1, 2, 3)); // Output: 12
+console.log(sumManyTimes(3, 4, 5)); // Output: 27
