@@ -18,3 +18,13 @@ const multiplyBy2 = multiply(2);
 const multiplyBy2And3 = multiplyBy2(3);
 const result = multiplyBy2And3(4);
 console.log(result); // Output: 24
+
+// 3. Desarrolla una funcion recursiva que calcule la potencia de un numero elevado a otro numero
+function power(base, exponent) {
+    if (exponent === 0) {
+        return 1;
+    } else {
+        return base * power(base, exponent - 1);
+    }
+}
+console.log(power(2, 3));
