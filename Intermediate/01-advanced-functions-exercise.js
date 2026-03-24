@@ -86,3 +86,10 @@ function sum(a, b, c) {
 }
 const add5And10 = partial(sum, 5, 10);
 console.log(add5And10(3)); // Output: 18
+
+// 8. Implementa un ejemplo que haga uso de spread
+function sumWithSpread(...numbers) {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+const nums = [1, 2, 3, 4];
+console.log(sumWithSpread(...nums)); // Output: 10
