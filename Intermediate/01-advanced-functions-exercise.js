@@ -28,3 +28,25 @@ function power(base, exponent) {
     }
 }
 console.log(power(2, 3));
+
+// 4. Crea una funcion createCounter() que reciba un valor inicial y retorne un objeto con dos metodos: increment() y decrement() y getValue que aumenten o disminuyan el contador respectivamente.
+function createCounter(initialValue) {
+    let count = initialValue;
+    return {
+        increment: function() {
+            count++;
+        },
+        decrement: function() {
+            count--;
+        },
+        getValue: function() {
+            return count;
+        }
+    }
+}
+const counter = createCounter(10);
+counter.increment();
+counter.increment();
+console.log(counter.getValue());
+counter.decrement();
+console.log(counter.getValue());
