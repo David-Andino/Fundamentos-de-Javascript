@@ -93,3 +93,7 @@ function sumWithSpread(...numbers) {
 }
 const nums = [1, 2, 3, 4];
 console.log(sumWithSpread(...nums)); // Output: 10
+
+// 9. Implementa un retorno implicito
+const add = (a, b) => a + b;
+console.log(add(5, 10)); // Output: 15
