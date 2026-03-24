@@ -74,3 +74,15 @@ function sumWithCallback(callback, ...numbers) {
 sumWithCallback(function(result) {
     console.log(`El resultado de la suma es: ${result}`);
 }, 1, 2, 3, 4); // Output: El resultado de la suma es: 10
+
+// 7. Desarrolla una funcion parcial
+function partial(func, ...fixedArgs) {
+    return function(...remainingArgs) {
+        return func(...fixedArgs, ...remainingArgs);
+    }
+}
+function sum(a, b, c) {
+    return a + b + c;
+}
+const add5And10 = partial(sum, 5, 10);
+console.log(add5And10(3)); // Output: 18
