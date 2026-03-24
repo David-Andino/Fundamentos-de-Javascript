@@ -62,3 +62,15 @@ function sumManyTimes(multiplier, ...numbers) {
 }
 console.log(sumManyTimes(2, 1, 2, 3)); // Output: 12
 console.log(sumManyTimes(3, 4, 5)); // Output: 27
+
+// 6. Crea un callback que se invoque con el resultado de la suma de todos los numeros 
+function sumWithCallback(callback, ...numbers) {
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+    }
+    callback(sum);
+}
+sumWithCallback(function(result) {
+    console.log(`El resultado de la suma es: ${result}`);
+}, 1, 2, 3, 4); // Output: El resultado de la suma es: 10
