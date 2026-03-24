@@ -97,3 +97,15 @@ console.log(sumWithSpread(...nums)); // Output: 10
 // 9. Implementa un retorno implicito
 const add = (a, b) => a + b;
 console.log(add(5, 10)); // Output: 15
+
+//10. Haz uso del this lexico
+const person = {
+    name: "Alice",
+    greet: function() {
+        setTimeout(() => {
+            console.log(`Hola, soy ${this.name}`);
+        }
+        , 1000);
+    }
+}
+person.greet(); // Output: Hola, soy Alice (después de 1 segundo)
