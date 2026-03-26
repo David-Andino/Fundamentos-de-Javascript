@@ -23,3 +23,17 @@ console.log(evens)
 
 let sum =numbers.reduce((previous, current) => previous + current)
 console.log(sum)
+
+// - Manipulacion
+// flat
+
+let nestedArray = [1, [2, [3, [4]]]]
+console.log(nestedArray)
+let flatArray = nestedArray.flat(2)
+console.log(flatArray)
+
+// FlatMap
+
+let phrases = ["Hola Mundo", "Adios Mundo"]
+let wordPhrases = phrases.flatMap(phrases => phrases.split(" "))
+console.log(wordPhrases)
