@@ -37,3 +37,5 @@ console.log(flatArray)
 let phrases = ["Hola Mundo", "Adios Mundo"]
 let wordPhrases = phrases.flatMap(phrases => phrases.split(" "))
 console.log(wordPhrases)
+
+// new code
