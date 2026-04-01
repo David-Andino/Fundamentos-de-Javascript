@@ -39,3 +39,4 @@ let wordPhrases = phrases.flatMap(phrases => phrases.split(" "))
 console.log(wordPhrases)
 
 // new code
+// Hola
