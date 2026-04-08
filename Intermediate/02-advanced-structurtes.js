@@ -38,5 +38,8 @@ let phrases = ["Hola Mundo", "Adios Mundo"]
 let wordPhrases = phrases.flatMap(phrases => phrases.split(" "))
 console.log(wordPhrases)
 
-// new code
-// Hola
+// Ordenacion
+//let unsortedNumbers = [3, 4, 1, 6, 10, 9]
+let unsorted = ["b", "a", "d", "c"]
+let sorted = unsorted.sort()
+console.log(sorted)
