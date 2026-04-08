@@ -39,7 +39,15 @@ let wordPhrases = phrases.flatMap(phrases => phrases.split(" "))
 console.log(wordPhrases)
 
 // Ordenacion
-//let unsortedNumbers = [3, 4, 1, 6, 10, 9]
+let unsortedNumbers = [3, 4, 1, 6, 10, 9]
 let unsorted = ["b", "a", "d", "c"]
 let sorted = unsorted.sort()
+let sorted2 = unsortedNumbers.sort((a, b) => a - b)
+console.log(sorted2)
 console.log(sorted)
+
+//reverse
+sorted.reverse()
+sorted2.reverse()
+console.log(sorted)
+console.log(sorted2)
